@@ -1,0 +1,10 @@
+
+.data-points {
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,0.2);
+    background-color: rgb(17, 139, 139);
+    transition: 0.3s;
+    display: inline-block;
+    padding: 1vw 4vw 1vw 4vw;
+    margin: 0.5rem;
+    border-radius: 5px; /* 5px rounded corners */
+  }
