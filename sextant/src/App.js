@@ -1,25 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <header className="App-header">
+        <Banner/>
+        <div>
+          <Exhibit header="hello" children={[<p>I</p>,<p>love</p>,<p>you.</p>]}/>
+          <Exhibit header="World" children={[<p>You</p>,<p>are</p>,<p>Great.</p>]}/>
+        </div>
+    </header>
+
   );
+}
+function Banner () {
+
+    return (
+      <h1>Sextant Field Tool</h1>
+    )
+  
+}
+function Exhibit (props) {
+
+    return (
+      
+      <card class="data-points">
+        <h2>{props.header}</h2>
+        {props.children}
+      </card>
+    )
+
 }
 
 export default App;
