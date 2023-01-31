@@ -3,7 +3,8 @@ import './App.css';
 import React from 'react';
 import Banner from './Banner';
 import Exhibit from './Exhibit';
-import IPFinder from './IPFinder'
+import IPFinder from './IPFinder';
+import PacketLatency from './PacketLatency';
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
         <Exhibit header="IP Addresses">
           <IPFinder IPv4={true}/>
           <IPFinder IPv4={false}/>
+        </Exhibit>
+        <Exhibit header="Packet Latency">
+          <PacketLatency/>
         </Exhibit>
       </div>
     </header>
