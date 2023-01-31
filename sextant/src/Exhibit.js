@@ -4,10 +4,10 @@ function Exhibit (props) {
 
     return (
       
-      <card class="data-points">
+      <div className="data-points">
         <h2>{props.header}</h2>
         {props.children}
-      </card>
+      </div>
     )
 
 }
