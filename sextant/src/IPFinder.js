@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 function IPFinder(props) {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
     let url = `https://api.ipify.org?format=json`
     let ipv = 4
    if(!props.IPv4){
@@ -22,7 +21,7 @@ function IPFinder(props) {
         .catch((e) => {
           console.error(`An error occurred: ${e}`)
         });
-    }, []);
+    });
    
     return (
 
